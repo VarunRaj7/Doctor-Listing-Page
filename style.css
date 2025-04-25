@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  h1 {
+    color: #2c3e50;
+  }
+  
+  #filters, #sort-options {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .doctor-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #suggestions {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  #suggestions li {
+    cursor: pointer;
+    list-style: none;
+    padding: 8px;
+    background-color: #eaeaea;
+    margin: 2px 0;
+    border-radius: 4px;
+  }
+  
+  #suggestions li:hover {
+    background-color: #dcdcdc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  

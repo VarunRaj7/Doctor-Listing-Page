@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Find a Doctor</h1>
+
+  <input type="text" id="search" placeholder="Search doctor" data-testid="autocomplete-input" />
+  <ul id="suggestions"></ul>
+
+  <div id="filters">
+    <h3 data-testid="filter-header-moc">Consultation Mode</h3>
+    <label><input type="radio" name="consultation" value="Video Consult" data-testid="filter-video-consult" /> Video Consult</label><br />
+    <label><input type="radio" name="consultation" value="In Clinic" data-testid="filter-in-clinic" /> In Clinic</label>
+
+    <h3 data-testid="filter-header-speciality">Speciality</h3>
+    <div id="specialties"></div>
+  </div>
+
+  <div id="sort-options">
+    <h3 data-testid="filter-header-sort">Sort</h3>
+    <label><input type="radio" name="sort" value="fees" data-testid="sort-fees" /> Fees (Low to High)</label><br />
+    <label><input type="radio" name="sort" value="experience" data-testid="sort-experience" /> Experience (High to Low)</label>
+  </div>
+
+  <div id="doctor-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
